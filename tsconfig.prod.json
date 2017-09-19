@@ -3,12 +3,12 @@
         "module": "commonjs",
         "target": "es6",
         "noImplicitAny": false,
-        "sourceMap": true,
-        "outDir": "build",
+        "sourceMap": false,
+        "outDir": "dist",
         "typeRoots": [ "./node_modules/@types" ]
     },
     "include": [
-        "src/**/*.ts"
+        "src/app/**/*.ts"
     ],
     "exclude": [
         "node_modules"
