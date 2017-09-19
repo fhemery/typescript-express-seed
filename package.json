@@ -11,7 +11,7 @@
     "dev": "npm run build-dev && concurrently \"tsc -w\" \"nodemon --quiet build/app/server.js\" \"mocha -w -R dot build/test\" ",
     "test": "npm run build-dev && mocha -R dot -w build/test",
     
-    "postinstall": "tsc -p tsconfig.prod.json",
+    "postinstall": "npm run build",
     "start": "node dist/server.js",
 
     "build-dev": "tsc && tslint -p tsconfig.json -c tslint.json",
@@ -26,7 +26,6 @@
   "devDependencies": {
     "@types/chai": "^4.0.4",
     "@types/express": "^4.0.37",
-    "@types/jasmine": "^2.6.0",
     "@types/node": "^8.0.28",
     "chai": "^4.1.2",
     "concurrently": "^3.5.0",
