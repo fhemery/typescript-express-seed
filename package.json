@@ -13,7 +13,7 @@
     "postinstall": "npm run build",
     "start": "node dist/server.js",
     "build-dev": "tsc && tslint -p tsconfig.json -c tslint.json",
-    "build": "tsc && tslint -p tsconfig.prod.json -c tslint.json"
+    "build": "tsc -p tsconfig.prod.json && tslint -p tsconfig.prod.json -c tslint.json"
   },
   "keywords": [],
   "author": "",
